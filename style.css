@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@400;500;600&display=swap');
+:root {
+    --font_white: #ffff;
+    --font_black: #0000;
+    --bg_color:#FFFFFF;
+  }
+  
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Prompt', sans-serif;
+    background: var(--bg_color);
+
+}
+
+header{
+    background-image: url(img/banner.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+
+}
+header .item{
+    width: 600px;
+    text-align: right;
+    padding-right: 150px;
+}
+
+header .item h2{
+    font-size: 40px;
+    text-transform: capitalize;
+    font-weight: 700;
+    margin-bottom: 16px;
+    text-shadow: 5px 5px #4747475e;
+
+}
+header .item p{
+    font-size: 15px;
+    text-transform: capitalize;
+    font-weight: 400;
+    margin-bottom: 16px;
+    color: var(--font_white);
+    line-height: 1.5;
+}
+header .item button{
+    padding: 10px 20px;
+    text-transform: capitalize;
+    font-size: 15px;
+    font-weight: 700;
+    border: none;
+    border-radius: 4px;
+    transition: 0.4s all ease;
+    background: var(--bg_color);
+}
+header .item button:hover{
+    background-color: #ffffff81;
+}
+
+.hero{
+    width: 100%;
+    height: 100vh;
+}
+.hero .item{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+.hero .item .col1{
+    flex-basis: 50%;
+    margin-right: 40px;
+}
+.hero .item .col1 img{
+    width: 500px;
+    height: 600px;
+    padding: 30px ;
+}
+
+.hero .item .col2{
+    flex-basis: 50%;
+    margin-left: 40px;
+}
+.hero .item .col2 h2{
+    font-size: 30px;
+    text-transform: capitalize;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+.hero .item .col2 p{
+    font-size: 15px;
+    text-transform: capitalize;
+    font-weight: 400;
+    margin-bottom: 16px;
+    line-height: 1.5;
+}
+.hero .item .col2 ul li{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 400;
+    float: left;
+}
+.hero .item .col2 ul li i{
+    font-size: 30px;
+    color: red;
+    font-weight: 700;
+    padding: 5px 15px 5px 0px;
+}
+.service{
+    width: 100%;
+    height: 100vh;
+    background: var(--bg_color);
+}
+.service h2{
+    text-align: center;
+    font-weight: 700;
+    font-size: 40px;
+    text-shadow: 5px 5px #4747475e;
+}
+.service .item{
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    padding: 40px 0px;
+
+}
+.service .item ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.service .item ul li{
+    list-style-type: none;
+    text-align: center;
+}
+.service .item .positive{
+    background-image:linear-gradient(to right ,#88dfb3d0,rgba(238, 153, 153, 0.562)), url(img/Rectangle3.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 40vh;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+}
+.service .item .positive .content{
+    width: 500px;
+    text-align: left;
+    padding-left: 50px;
+}
+.service .item .positive .content h2{
+    text-align: left;
+    margin-bottom: 16px;
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: capitalize;
+
+}
+.service .item .positive .content button{
+    padding: 10px 20px;
+    text-transform: capitalize;
+    font-size: 15px;
+    font-weight: 700;
+    border: none;
+    border-radius: 4px;
+    transition: 0.4s all ease;
+    background: var(--bg_color);
+}
+.service .item .positive .content button:hover{
+    background-color: #ffffff81;
+}
+footer{
+    width: 100%;
+    height: 70vh;
+    background: #141414;
+    
+}
+footer .item{
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    padding-top: 100px;
+    
+}
+footer .item .col1{
+    flex-basis: 70%;
+    padding-right: 50px;
+    width: 400px;
+}
+footer .item .col1 h2{
+    margin-bottom: 16px;
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: var(--font_white);
+}
+footer .item .col1 p{
+    font-size: 15px;
+    text-transform: capitalize;
+    font-weight: 400;
+    margin-bottom: 16px;
+    color: var(--font_white);
+    line-height: 1.5;
+}
+footer .item .col1 h4{
+    font-size: 15px;
+    text-transform: capitalize;
+    font-weight: 400;
+    margin-bottom: 16px;
+    color: var(--font_white);
+    opacity: 0.5;
+}
+footer .item .col1 ul{
+    display: flex;
+    align-items: center;
+}
+footer .item .col1 ul li{
+    list-style-type: none;
+    margin: 20px 0px;
+}
+footer .item .col1 ul li a{
+    padding: 10px 40px 10px 0px;
+}
+footer .item .col1 ul li i{
+    font-size: 40px;
+}
+
+.bxl-linkedin-square{
+    color: #0077B5;
+}
+.bxl-instagram-alt{
+    color: #9538BB;
+}
+.bxl-facebook-square{
+    color: #0D8AF0;
+}
+.bxl-youtube{
+    color: red;
+}
+footer .item .col2{
+    flex-basis: 30%;
+    width: 80%;
+    height: auto;
+}
+footer .item .col2 h2{
+    margin-bottom: 16px;
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: var(--font_white);
+}
+footer .item .col2 fieldset{
+    display: inline-block;
+    font-size: 15px;
+    border: 2px solid #ffffff33;
+    border-radius: 15px;
+    outline: none;
+    color: var(--font_white);
+    text-transform: capitalize;
+}
+footer .item .col2 fieldset legend{
+    padding: 0px 10px;
+    margin-left: 10px;
+    height: 16px;
+}
+footer .item .col2 input{
+    padding: 12px 16px;
+    padding-right: 100px;
+    border: none;
+    outline: none;
+    background: none;
+    color: var(--font_white);
+    text-transform: capitalize;
+}
+
+footer .item .col2 button{
+    padding: 10px 20px;
+    text-transform: capitalize;
+    font-size: 15px;
+    font-weight: 700;
+    border: none;
+    border-radius: 4px;
+    transition: 0.4s all ease;
+    background: var(--bg_color);
+    margin: 20px 0px;
+}
+footer .item .col2 button:hover{
+    background-color: #ffffff81;
+}
